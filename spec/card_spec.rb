@@ -25,15 +25,11 @@ end
 
 describe "Game" do
 
-	it "Create a Game" do
+	it "Create a Game and asks for number of players" do
 		game = Game.new
-		expect(game).to be_a Game
+		expect(game.nom_players).to be > 0
 	end
 
-	it "Asks for number of players" do
-		game = Game.new
-		expect(game.nom_players).to eq("2")
-	end
 end
 
 

@@ -9,7 +9,7 @@ class Game
 
 	def get_nom_players
 		puts "How many players?"
-		return STDIN.gets.chomp
+		return STDIN.gets.chomp.to_i
 	end
 
 end
