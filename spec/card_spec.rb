@@ -12,10 +12,14 @@ end
 
 describe "Player" do
 
-		 it "Creates a Player" do
+		it "Creates a Player" do
 		 player = Player.new
-
 		expect(player).to be_a Player
+	end
+
+		it "Creates a Dealer" do
+		dealer = Dealer.new
+		expect(dealer). to be_a Dealer
 	end
 end
 
@@ -23,8 +27,12 @@ describe "Game" do
 
 	it "Create a Game" do
 		game = Game.new
+		expect(game).to be_a Game
+	end
 
-		expect(game).to puts "How many players?"
+	it "Asks for number of players" do
+		game = Game.new
+		expect(game.nom_players).to eq("2")
 	end
 end
 

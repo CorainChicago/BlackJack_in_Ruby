@@ -3,10 +3,14 @@ class Player
 	attr_accessor :hand, :position,
 
 	def initialize(hand, position)
-		self.hand = hand
-		self.position = position
+		@hand = hand
+		@position = position
 	end
+end
 
-	
+class Dealer < Player
+
+	attr_accessor :decisions
+
 
 end

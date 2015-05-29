@@ -3,10 +3,10 @@ class Card
 	attr_accessor :value, :suit, :face, :location
 	
 	def initialize(value, suit, face, location)
-		self.value = value
-		self.suit = suit
-		self.face = face
-		self.location = location
+		@value = value
+		@suit = suit
+		@face = face
+		@location = location
 
 		
 	end
